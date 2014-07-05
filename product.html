@@ -13,57 +13,265 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Gumby-master/css/gumby.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+    <!-- place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 
 <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+             <![endif]-->
+    <div class="product-wrap">
+
+        <!-- Navbar -->
+
+        <div class="navbar" id="nav1">
+            <!-- Toggle for mobile navigation, targeting the <ul> -->
+            <a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
+            <h1 class="four columns logo">
+                <a href="index.html">
+                    <img src="images/cracked-logo-final.png" gumby-retina />
+                </a>
+            </h1>
+
+            <ul class="eight columns nav-right">
+                <li class="nav-item"><a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Buy</a>
+                </li>
+            </ul>
+        </div>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
-    </script>
+
+        <!-- end navbar  -->
+
+        <div class="row">
+            <div class="twelve columns">
+                <div class="product-intro">
+                    <h2>Click the name to read the descriptions and ingredients for each toffee. I make each and every one by hand and invent all the flavors in the dead of night.</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- begin product gallery -->
+        <div class="row">
+            <div id="product-grid">
+                <div class="lb-container">
+                    <div class="image-row">
+                        <div class="image-set">
+
+                            <ul id="tiles" class="three_up tiles">
+                                <!-- These are our grid blocks -->
+                                <li>
+                                    <a class="potato" href="images/potato_big.jpg" data-lightbox="toffee-pic" data-title="Potato Chip">
+                                        <img class="potato" src="images/potato_thumb.jpg" alt="image-1" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('potato_content');">
+                                        <h3 class="productName">Potato Chip</h3>
+                                    </a>
+                                    <div id="potato_content" class="product-content row">
+
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, vanilla, salt, potato chips, 60% dark chocolate, soy lecithin
 
 
-    <script src="Gumby-master/js/libs/modernizr-2.6.2.min.js"></script>
-    <script src="Gumby-master/js/libs/gumby.min.js"></script>
-    <script gumby-touch="Gumby-master/js/libs" src="Gumby-master/js/libs/gumby.js"></script>
-    <!--   gumby parallax script -->
-    <script src="Gumby-master/js/gumby.parallax.js"></script>
-    <!--     gumby libs and add-ons -->
-    <script src="Gumby-master/js/gumby.fittext.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.retina.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.fixed.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.skiplink.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.toggleswitch.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.checkbox.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.radiobtn.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.tabs.js"></script>
-    <script src="Gumby-master/js/libs/ui/gumby.navbar.js"></script>
-    <script src="Gumby-master/js/libs/ui/jquery.validation.js"></script>
-    <script src="Gumby-master/js/libs/gumby.init.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-    </script>
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="coffee" href="images/coffee_big.jpg" data-lightbox="toffee-pic" data-title="Coffee Toffee">
+                                        <img class="coffee" src="images/coffee_thumb.jpg" alt="image-2" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('coffee_content');">
+                                        <h3 class="productName">Coffee Toffee</h3>
+                                    </a>
+                                    <div class="product-content row" id='coffee_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, molasses, ground espresso, salt, pecans/walnuts, 60% dark chocolate, soy lecithin
+
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="keyLime" href="images/keyLimePie_big.jpg" data-lightbox="toffee-pic" data-title="Key Lime Pie">
+                                        <img class="keyLime" src="images/keyLimePie_thumb.jpg" alt="image-3" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('keyLime_content');">
+                                        <h3 class="productName">Key Lime Pie</h3>
+                                    </a>
+                                    <div class="product-content row" id='keyLime_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, Key Lime extract, salt, white chocolate, graham cracker, soy lecithin
+
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="orgNoNuts" href="images/orgNoNuts_big.jpg" data-lightbox="toffee-pic" data-title="Original (no nuts)">
+                                        <img class="orgNoNuts" src="images/orgNoNuts_thumb.jpg" alt="image-4" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('orgNoNuts_content');">
+                                        <h3 class="productName">Original (no nuts)</h3>
+                                    </a>
+                                    <div class="product-content row" id='orgNoNuts_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, vanilla, salt, 60% dark chocolate, soy lecithin
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="orig" href="images/orig_big.jpg" data-lightbox="toffee-pic" data-title="Original">
+                                        <img class="orig" src="images/orig_thumb.jpg" alt="image-5" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('org_content');">
+                                        <h3 class="productName">Original</h3>
+                                    </a>
+                                    <div class="product-content row" id='org_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, vanilla, salt, pecans, 60% dark chocolate, soy lecithin
+
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="snickerdoodle" href="images/Snickerdoodle_big.jpg" data-lightbox="toffee-pic" data-title="Snickerdoodle">
+                                        <img class="snickerdoodle" src="images/Snickerdoodle_thumb.jpg" alt="image-6" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('snicker_content');">
+                                        <h3 class="productName">Snickerdoodle</h3>
+                                    </a>
+                                    <div class="product-content row" id='snicker_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, molasses, cinnamon, snickerdoodle cookie crumbs (butter, sugar, flour, vanilla, cream of tartar, cinnamon, salt), salt, white chocolate, soy lecithin
+                                        <h4>Description</h4>
+
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="pumpkinPie" href="images/PumpkinPie_big.jpg" data-lightbox="toffee-pic" data-title="Pumpkin Pie">
+                                        <img class="pumpkinPie" src="images/PumpkinPie_thumb.jpg" alt="image-7" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('pumpkin_content');">
+                                        <h3 class="productName">Pumpkin Pie</h3>
+                                    </a>
+                                    <div class="product-content row" id='pumpkin_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, molasses, pumpkin pie, spice, cinnamon, salt, pecans, pumpkin seeds, white chocolate, graham cracker, soy lecithin
+
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="trailMix" href="images/trailMix_big.jpg" data-lightbox="toffee-pic" data-title="Trail Mix">
+                                        <img class="trailMix" src="images/trailMix_thumb.jpg" alt="image-8" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('trail_content');">
+                                        <h3 class="productName">Trail Mix</h3>
+                                    </a>
+                                    <div class="product-content row" id='trail_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, brown sugar, molasses, cinnamon, honey, granola, golden raisins, pretzels, salt, pecans, 60% dark chocolate, soy lecithin
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="birthday" href="images/birthdayCake_big.jpg" data-lightbox="toffee-pic" data-title="Birthday Cake">
+                                        <img class="birthday" src="images/birthdayCake_thumb.jpg" alt="image-9" />
+                                    </a>
+                                    <a href="javascript:toggleDiv('birthday_content');">
+                                        <h3 class="productName">Birthday Cake</h3>
+                                    </a>
+                                    <div class="product-content row" id='birthday_content'>
+                                        <h4>Ingredients</h4>
+                                        butter, white sugar, butter extract, salt, white chocolate, sprinkles, soy lecithin
+                                        <h4>Description</h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et, fuga. Architecto at laboriosam est, asperiores repellendus culpa explicabo tempore fugiat, a possimus aperiam praesentium sed nam, enim molestiae. Fugiat.
+
+                                    </div>
+                                </li>
+
+                                <!-- End of grid blocks -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- end product gallery  -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+        </script>
+
+
+        <script src="Gumby-master/js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="Gumby-master/js/libs/gumby.min.js"></script>
+        <script gumby-touch="Gumby-master/js/libs" src="Gumby-master/js/libs/gumby.js"></script>
+        <!--   gumby parallax script -->
+        <script src="Gumby-master/js/gumby.parallax.js"></script>
+        <!--     gumby libs and add-ons -->
+        <!-- lightbox gallery -->
+        <script src="lightbox/js/lightbox.min.js"></script>
+
+        <script>
+        function toggleDiv(divId) {
+            $("#" + divId).fadeToggle();
+        }
+        </script>
+
+        <script src="Gumby-master/js/gumby.fittext.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.retina.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.fixed.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.skiplink.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.toggleswitch.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.checkbox.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.radiobtn.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.tabs.js"></script>
+        <script src="Gumby-master/js/libs/ui/gumby.navbar.js"></script>
+        <script src="Gumby-master/js/libs/ui/jquery.validation.js"></script>
+        <script src="Gumby-master/js/libs/gumby.init.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+        </script>
 </body>
 
 </html>

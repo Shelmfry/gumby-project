@@ -1684,13 +1684,25 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 @font-face { font-family: candy; src: url(../../fonts/sexcandy.ttf); }
 
+@font-face { font-family: content; src: url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600); }
+
 .parallax { background-attachment: fixed !important; }
 
 .oldie .parallax, .ie9 .parallax { background-attachment: static !important; }
 
-.parallax { background: url(../../images/coffee_big.jpg) top center no-repeat; height: 98%; }
+h1, h2, h3, h4, h5 { font-family: candy; }
 
-.welcome h1 { text-align: center; font-family: candy; padding-top: 2%; padding-bottom: 0; }
+.navbar { background: url("../../images/soft-noise.png"); border-bottom-style: solid; border-bottom-color: #f36f5d; border-bottom-width: 2em; position: fixed; width: 100%; z-index: 999; padding-left: 2em; padding-right: 2em; }
+
+.navbar ul li.nav-item > a { font-family: candy; font-size: 3rem; text-align: right; }
+
+.navbar ul li.nav-item > a:hover { background-color: #f36f5d; }
+
+ul.nav-right { float: right; }
+
+.parallax { background: url(../../images/coffee_big.jpg) top center no-repeat; height: 70%; }
+
+.welcome h1 { text-align: center; font-family: candy; padding-top: 0; padding-bottom: 0; }
 
 .header-container { background: url("../../images/soft-noise.png"); border-bottom-style: solid; border-bottom-color: #f36f5d; border-bottom-width: 3em; position: fixed; width: 100%; text-align: center; z-index: 999; }
 
@@ -1703,3 +1715,22 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .home-content { background-color: #94c9d5; padding-bottom: 5%; }
 
 .btn { font-family: candy; z-index: 0; }
+
+.product-intro { margin-top: 15%; background: url("../../images/soft-noise.png"); text-align: center; padding: 2em; }
+
+#product-grid { text-align: center; margin-top: 5%; }
+
+.product-wrap { background-color: #94c9d5; }
+
+#tiles li { display: inline-block; float: left; padding-left: 1.06383%; padding-right: 1.06383%; width: 100%; min-height: 250px; height: auto; margin-right: auto; margin-left: auto; }
+@media only screen and (min-width: 0px) { #tiles li { width: 100%; } }
+@media only screen and (min-width: 768px) { #tiles li { width: 50%; } }
+@media only screen and (min-width: 940px) { #tiles li { width: 33.33333%; } }
+
+.lb-details span.lb-caption { font-size: 2rem; }
+
+.productName:hover { text-decoration: underline; font-weight: bold; }
+
+.product-content.row { display: none; text-align: left; font-family: 'Source Sans Pro', sans-serif; background: rgba(255, 255, 255, 0.5); padding: 1em; border-radius: 10px; font-size: 1.2rem; }
+
+form { padding-top: 15%; }
