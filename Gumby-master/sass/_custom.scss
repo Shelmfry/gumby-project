@@ -19,6 +19,7 @@ src: url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
     text-align: center;
 }
 
+
 @mixin navbar {
 	background: url("../../images/soft-noise.png"); 
 	border-bottom-style: solid;
@@ -35,7 +36,9 @@ src: url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 	background: url("../../images/soft-noise.png"); 
 }
 //variables 
+
  $backBlue : #94c9d5; 
+ $pink: #f36f5d;
 
 //implementation AHHHHHHhhh so new
 
@@ -64,6 +67,10 @@ ul.nav-right {
 
 .parallax {
   background: url(../../images/coffee_big.jpg) top center no-repeat;
+  height:100%;
+}
+#about-parallax {
+  background: url(../../images/birthdayCake_big.jpg) top center no-repeat;
   height:70%;
 }
 .welcome h1 {
@@ -90,6 +97,10 @@ padding-bottom:0;
 	max-width:12%;
 	margin-left: -2%;
 }
+.monster-small {
+	max-width:95%;
+	margin-left: -2%;
+}
 
 .homepage-nav {
     @include center;
@@ -97,6 +108,7 @@ padding-bottom:0;
 .home-content {
 	background-color: #94c9d5; 
 	padding-bottom:5%;
+	margin-top:15%;
 }
 
 .btn {
@@ -109,13 +121,24 @@ padding-bottom:0;
 	@include soft-noise;
 	@include center;
 	padding:2em;
+	border-radius: 10px;
+	border-style:solid;
+	border-width:30px;
+	border-color: #fdb8af;
+}
+
+h3.intro {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 #product-grid {
 	@include center;
 	margin-top:5%;
 }
-.product-wrap {
+.wrap {
 	background-color: $backBlue;
+}
+.about-wrap {
+	margin-top:5%;
 }
 
 // This will create a product grid that is 
@@ -158,6 +181,42 @@ h4 {
 	text-decoration: underline;
 }
 
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+.bio p {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: rgba (255, 255, 255,.5); 
+}
+
+.bio {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding:1em;
+	border-radius: 10px;
+	margin-bottom:3em;
+}
+
+.meet-audrey h1 {
+	text-align:center;
+	margin-top:-25%;
+	background-color: rgba(68, 68, 68, .5);
+	color: white;
+}
+
+.welcome h1{
+	text-align:center;
+	margin-top:-30%;
+	background-color: rgba(68, 68, 68, .5);
+	color: white;
+}
+.about-content {
+	margin-top:8%;
+}
 
 
 
