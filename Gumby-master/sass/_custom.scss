@@ -1,0 +1,240 @@
+// Your custom SCSS should be written here... 
+
+@font-face {
+	font-family: candy;
+    src: url(../../fonts/sexcandy.ttf);
+}
+
+@font-face {
+font-family: content;
+src: url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+}
+
+//mixins 
+
+
+@import "../bower_components/gumby-parallax/_parallax.scss";
+
+@mixin center {
+    text-align: center;
+}
+
+
+@mixin navbar {
+	background: url("../../images/soft-noise.png"); 
+	border-bottom-style: solid;
+	border-bottom-color: #f36f5d;
+	border-bottom-width:2em;
+	position:fixed;
+	width:100%;
+	z-index: 999;
+	padding-left:2em;
+	padding-right:2em;
+}
+
+@mixin soft-noise {
+	background: url("../../images/soft-noise.png"); 
+}
+//variables 
+
+ $backBlue : #94c9d5; 
+ $pink: #f36f5d;
+
+//implementation AHHHHHHhhh so new
+
+h1, h2, h3, h4, h5 {
+	font-family: candy;
+}
+
+.navbar {
+	@include navbar;
+}
+
+.navbar ul li.nav-item > a {
+	font-family:candy;
+	font-size:3rem;
+	text-align:right;
+
+}
+.navbar ul li.nav-item > a:hover {
+	background-color: #f36f5d;
+}
+
+ul.nav-right {
+	float:right;
+}
+
+.parallax {
+  background: url(../../images/coffee_big.jpg) top center no-repeat;
+  height:50%;
+}
+#about-parallax {
+  background: url(../../images/birthdayCake_big.jpg) top center no-repeat;
+  height:70%;
+}
+.welcome h1 {
+@include center;
+font-family: candy; 
+padding-top:0;
+padding-bottom:0;
+}
+.header-container {
+	background: url("../../images/soft-noise.png"); 
+	border-bottom-style: solid;
+	border-bottom-color: #f36f5d;
+	border-bottom-width:3em;
+	width:100%;
+	@include center; 
+	z-index: 999;
+}
+.header {
+    max-width:35%;
+    background: url("../../images/soft-noise.png"); 
+}
+.monster {
+	max-width:12%;
+	margin-left: -2%;
+}
+.monster-small {
+	max-width:95%;
+	margin-left: -2%;
+}
+
+.homepage-nav {
+    @include center;
+}
+.home-content {
+	background-color: #94c9d5; 
+	padding-bottom:5%;
+	margin-top:10%;
+}
+
+.btn {
+	font-family: candy;
+	z-index: 0;
+}
+
+.product-intro {
+	margin-top:15%;
+	@include soft-noise;
+	@include center;
+	padding:2em;
+	border-radius: 10px;
+	border-style:solid;
+	border-width:30px;
+	border-color: #fdb8af;
+}
+
+h3.intro {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#product-grid {
+	@include center;
+	margin-top:5%;
+}
+.wrap {
+	background-color: $backBlue;
+}
+.about-wrap {
+	margin-top:5%;
+}
+
+// This will create a product grid that is 
+// 4 columns on desktop, 2 on tablets, and
+// 1 column on mobile devices.
+
+#tiles li {
+  @include fancytiles(3,2,1);
+  min-height: 250px;
+  height: auto;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+// lightbox gallery 
+.lb-details span.lb-caption{
+	font-size:2rem;
+}
+
+.productName:hover {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.product-content.row {
+	display:none;
+	text-align: left; 
+	font-family: 'Source Sans Pro', sans-serif;
+	background: rgba(255, 255, 255, 0.5);
+	padding:1em;
+	border-radius:10px;
+	font-size:1.2rem;
+
+}
+
+form {
+	padding-top:10%;
+	background-color:$backBlue;
+	margin-bottom:0;
+
+}
+
+form#order {
+	margin-bottom: 0px;
+}
+
+form ul {
+	font-family:'Source Sans Pro', sans-serif;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding:2em;
+	border-radius:10px;
+
+}
+h4 {
+	text-decoration: underline;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+.bio p {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: rgba (255, 255, 255,.5); 
+	font-size:1.5rem;
+}
+
+.bio {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding:1em;
+	border-radius: 10px;
+	margin-bottom:3em;
+}
+
+.meet-audrey h1 {
+	text-align:center;
+	margin-top:-25%;
+	background-color: rgba(68, 68, 68, .5);
+	color: white;
+}
+
+.welcome h1{
+	text-align:center;
+	margin-top:-20%;
+	background-color: rgba(68, 68, 68, .5);
+	color: white;
+}
+.about-content {
+	margin-top:8%;
+
+}
+
+#about-section.row  {
+	max-width:95%;
+}
+
+
